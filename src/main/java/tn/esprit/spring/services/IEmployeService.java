@@ -33,7 +33,8 @@ public interface IEmployeService {
 	public List<Employe> getAllEmployes();
 	public List<Timesheet> getTimesheetsByMissionAndDate(Employe employe, Mission mission, 
 	Date dateDebut, Date dateFin);
-
+	public Employe retrieveEmploye(int id);
+	public List<Employe> retrieveAllEmployes();
 	int addOrUpdateEmploye(Employe employe);
 	
 	
